@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
 </head>
+
 <body>
-    <form method="POST" action="/function" enctype="multipart/form-data">
-        <input id="file" type="file" name="files">
-        <input type="submit" name="submit">
-    </form>
+
+	<h1 class="heading" style="color: #0e314c; text-align:center; margin-top: 3%; margin-bottom: 7%;">Object Detection With TFOD1 For - Wearing a Mask, No Mask & Mask Weared Incorrect</h1>
+
+
+
+<section class="contact-area pb-80 mt-5">
+    <div class="container mt-5" >
+        <form  method="POST" action="/function" enctype="multipart/form-data"  name="myForm" class="form-mobile" style="text-align: center; margin-bottom: 10em;">
+                    <div class="row" >
+                        <input type="file" name=files style="text-align: right  ;">
+                        <input type="submit" name="submit">
+
+
+                    </div>
+                </form>
+
+        <div class="row h-100 justify-content-center align-items-center" >
+
+
+            <div class="col-lg-6 col-md-12 mb-5" style="margin-right: 20%;">
+                <div class="col-lg-6 col-md-12">
+                <img src="{{ user_image }}" class="image1" alt="image" style="height: 512px; margin-top: -17%;" class="image1">
+            </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
 
 </body>
+
+
+
 </html>
